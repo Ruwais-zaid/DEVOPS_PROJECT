@@ -17,11 +17,6 @@ pipeline {
                 sh 'javac -cp .:cloudsim.jar CloudSimExample1.java'
             }
         }
-        stage('Download CloudSim JAR') {
-    steps {
-        sh 'wget -q https://github.com/Cloudslab/cloudsim/releases/download/v5.0/cloudsim-5.0.jar -O cloudsim.jar'
-    }
-        }
 
 
 
